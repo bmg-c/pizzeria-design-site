@@ -1,0 +1,22 @@
+.input-textarea-container {
+  gap: var(--dl-space-space-halfunit);
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.input-textarea-text {
+  fill: var(--dl-color-colorscheme-textcolor1inverted);
+  color: var(--dl-color-colorscheme-textcolor1inverted);
+}
+.input-textarea-textarea {
+  width: 100%;
+  padding-top: var(--dl-space-space-unit);
+  border-color: var(--dl-color-colorscheme-textcolor1inverted);
+  border-width: 1px;
+  padding-left: var(--dl-space-space-unit);
+  border-radius: var(--dl-radius-radius-inputradius);
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-unit);
+  background-color: var(--dl-color-colorscheme-textcolor1);
+}

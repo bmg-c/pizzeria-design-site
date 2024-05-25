@@ -1,0 +1,70 @@
+.dialog-box-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  z-index: 2000;
+  position: fixed;
+  inset: 0px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.dialog-box-container1 {
+  gap: var(--dl-space-space-oneandhalfunits);
+  width: 400px;
+  height: 412px;
+  display: flex;
+  align-items: flex-start;
+  padding-top: var(--dl-space-space-fourunits);
+  padding-left: var(--dl-space-space-oneandhalfunits);
+  border-radius: var(--dl-radius-radius-radius8);
+  padding-right: var(--dl-space-space-oneandhalfunits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-fourunits);
+  background-color: var(--dl-color-colorscheme-textcolor1);
+}
+.dialog-box-text {
+  fill: var(--dl-color-colorscheme-textcolor1inverted);
+  color: var(--dl-color-colorscheme-textcolor1inverted);
+}
+.dialog-box-text1 {
+  fill: var(--dl-color-colorscheme-textcolor1faded);
+  color: var(--dl-color-colorscheme-textcolor1faded);
+  width: 100%;
+  text-align: center;
+}
+.dialog-box-container2 {
+  gap: var(--dl-space-space-oneandhalfunits);
+  width: 400px;
+  height: 412px;
+  display: flex;
+  align-items: flex-start;
+  padding-top: var(--dl-space-space-fourunits);
+  padding-left: var(--dl-space-space-oneandhalfunits);
+  border-radius: var(--dl-radius-radius-radius8);
+  padding-right: var(--dl-space-space-oneandhalfunits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-fourunits);
+  background-color: var(--dl-color-colorscheme-textcolor1);
+}
+.dialog-box-text2 {
+  fill: var(--dl-color-colorscheme-textcolor1inverted);
+  color: var(--dl-color-colorscheme-textcolor1inverted);
+}
+.dialog-box-container3 {
+  gap: var(--dl-space-space-unit);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.dialog-box-text3 {
+  fill: var(--dl-color-colorscheme-color2);
+  color: var(--dl-color-colorscheme-color2);
+}
+.dialog-box-text4 {
+  fill: var(--dl-color-colorscheme-textcolor1faded);
+  color: var(--dl-color-colorscheme-textcolor1faded);
+  width: 100%;
+  text-align: center;
+}

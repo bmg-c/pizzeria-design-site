@@ -1,0 +1,17 @@
+.banner-section-container {
+  gap: var(--dl-space-space-fourunits);
+  width: 100%;
+  height: 340px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  background-color: var(--dl-color-colorscheme-color3);
+}
+
+@media (max-width: 767px) {
+  .banner-section-container {
+    gap: 0px;
+  }
+}

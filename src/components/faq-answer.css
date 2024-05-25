@@ -1,0 +1,22 @@
+.faq-answer-container {
+  gap: var(--dl-space-space-unit);
+  width: 50%;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.faq-answer-text {
+  fill: var(--dl-color-colorscheme-textcolor1inverted);
+  color: var(--dl-color-colorscheme-textcolor1inverted);
+  width: 100%;
+}
+.faq-answer-text1 {
+  fill: var(--dl-color-colorscheme-textcolor1inverted);
+  color: var(--dl-color-colorscheme-textcolor1inverted);
+  width: 100%;
+}
+
+
+

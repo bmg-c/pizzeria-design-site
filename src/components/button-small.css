@@ -1,0 +1,60 @@
+.button-small-container {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.button-small-button {
+  fill: var(--dl-color-colorscheme-textcolor1);
+  color: var(--dl-color-colorscheme-textcolor1);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  position: relative;
+  align-self: center;
+  align-items: center;
+  border-radius: var(--dl-radius-radius-round);
+  flex-direction: row;
+  justify-content: center;
+  background-color: var(--dl-color-colorscheme-color3);
+}
+.button-small-image {
+  flex: 0;
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+.button-small-text {
+  width: auto;
+  height: auto;
+  text-align: center;
+}
+
+
+
+
+
+.button-small-root-class-name5 {
+  margin-bottom: var(--dl-space-space-halfunit);
+}
+
+.button-small-root-class-name7 {
+  top: 0px;
+  left: 24px;
+  position: static;
+}
+.button-small-root-class-name8 {
+  margin-right: var(--dl-space-space-fiveunits);
+}
+@media(max-width: 991px) {
+  .button-small-root-class-name8 {
+    margin-right: var(--dl-space-space-twounits);
+  }
+}
+@media(max-width: 767px) {
+  .button-small-root-class-name8 {
+    margin-right: var(--dl-space-space-twounits);
+  }
+}

@@ -1,0 +1,91 @@
+.category-block-container {
+  gap: var(--dl-space-space-unit);
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+  transition: ease all 0.15s;
+}
+.category-block-container1 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dl-color-colorscheme-standoutbackgroundcolor);
+  transition: ease all 0.15s;
+}
+.category-block-container2 {
+  gap: var(--dl-space-space-threeunits);
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  max-width: 1072px;
+  align-items: center;
+  justify-content: flex-start;
+  transition: ease all 0.15s;
+}
+.category-block-text {
+  fill: var(--dl-color-colorscheme-textcolor1);
+  color: var(--dl-color-colorscheme-textcolor1);
+  font-style: normal;
+  line-height: 1.15;
+  transition: ease all 0.15s;
+}
+.category-block-container3 {
+  gap: var(--dl-space-space-threeunits);
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1072px;
+  margin-top: 0px;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  justify-content: flex-start;
+  transition: ease all 0.15s;
+}
+
+.category-block-root-class-name1 {
+  margin-top: var(--dl-space-space-unit);
+  transition: ease all 0.15s;
+}
+.category-block-root-class-name2 {
+  margin-top: var(--dl-space-space-unit);
+  transition: ease all 0.15s;
+}
+@media (max-width: 1200px) {
+  .category-block-container2 {
+    max-width: 800px;
+  }
+  .category-block-container3 {
+    max-width: 800px;
+  }
+}
+@media (max-width: 991px) {
+  .category-block-container2 {
+    max-width: 700px;
+  }
+  .category-block-container3 {
+    max-width: 700px;
+  }
+}
+@media (max-width: 767px) {
+  .category-block-container2 {
+    max-width: 312px;
+  }
+  .category-block-container3 {
+    max-width: 312px;
+  }
+}
+@media (max-width: 479px) {
+  .category-block-container2 {
+    max-width: 312px;
+  }
+}

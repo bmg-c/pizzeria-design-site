@@ -1,0 +1,105 @@
+.order-card-container {
+  gap: 4px;
+  width: 720px;
+  height: 180px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding-top: var(--dl-space-space-unit);
+  border-color: var(--dl-color-colorscheme-color3);
+  border-width: 1px;
+  padding-left: var(--dl-space-space-twounits);
+  border-radius: var(--dl-radius-radius-ordercardradius);
+  padding-right: var(--dl-space-space-twounits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-unit);
+  background-color: var(--dl-color-colorscheme-textcolor1);
+}
+.order-card-container1 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.order-card-container2 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+.order-card-text {
+  fill: var(--dl-color-colorscheme-textcolor1inverted);
+  color: var(--dl-color-colorscheme-textcolor1inverted);
+}
+.order-card-text1 {
+  fill: var(--dl-color-colorscheme-textcolor1inverted);
+  color: var(--dl-color-colorscheme-textcolor1inverted);
+}
+.order-card-text2 {
+  fill: var(--dl-color-colorscheme-textcolor1inverted);
+  color: var(--dl-color-colorscheme-textcolor1inverted);
+}
+.order-card-text3 {
+  fill: var(--dl-color-colorscheme-textcolor1inverted);
+  color: var(--dl-color-colorscheme-textcolor1inverted);
+}
+.order-card-container3 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-top: 4px;
+  align-items: center;
+  justify-content: space-between;
+}
+.order-card-text4 {
+  fill: var(--dl-color-colorscheme-textcolor1inverted);
+  color: var(--dl-color-colorscheme-textcolor1inverted);
+}
+.order-card-text5 {
+  fill: var(--dl-color-colorscheme-textcolor1inverted);
+  color: var(--dl-color-colorscheme-textcolor1inverted);
+  font-style: normal;
+}
+.order-card-container4 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.order-card-text6 {
+  fill: var(--dl-color-colorscheme-textcolor1inverted);
+  color: var(--dl-color-colorscheme-textcolor1inverted);
+}
+.order-card-text7 {
+  fill: var(--dl-color-colorscheme-textcolor1inverted);
+  color: var(--dl-color-colorscheme-textcolor1inverted);
+  font-style: normal;
+}
+.order-card-container5 {
+  width: 100%;
+  height: 64px;
+  display: flex;
+  margin-top: 4px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.order-card-text8 {
+  fill: var(--dl-color-colorscheme-textcolor1inverted);
+  color: var(--dl-color-colorscheme-textcolor1inverted);
+  width: 100%;
+  height: auto;
+  text-align: left;
+}
+
+@media (max-width: 767px) {
+  .order-card-container {
+    width: 95%;
+  }
+}

@@ -1,0 +1,35 @@
+.product-variant-container {
+  gap: var(--dl-space-space-twounits);
+  width: 312px;
+  height: 28px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.product-variant-container1 {
+  gap: var(--dl-space-space-twounits);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.product-variant-text {
+  fill: var(--dl-color-colorscheme-textcolor1inverted);
+  color: var(--dl-color-colorscheme-textcolor1inverted);
+  width: 92px;
+  text-align: center;
+}
+.product-variant-text1 {
+  fill: var(--dl-color-colorscheme-textcolor1inverted);
+  color: var(--dl-color-colorscheme-textcolor1inverted);
+  width: 88px;
+  text-align: center;
+}
+
+
+
+
+
+

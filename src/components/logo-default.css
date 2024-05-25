@@ -1,0 +1,19 @@
+.logo-default-container {
+  width: auto;
+  height: auto;
+}
+.logo-default-image {
+  text-decoration: none;
+}
+
+@media (max-width: 991px) {
+  .logo-default-root-class-name {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .logo-default-root-class-name2 {
+    display: none;
+  }
+}

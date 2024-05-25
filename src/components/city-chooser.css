@@ -1,0 +1,20 @@
+.city-chooser-container {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.city-chooser-select {
+  color: var(--dl-color-colorscheme-textcolor1);
+  align-self: center;
+  border-radius: var(--dl-radius-radius-radius8);
+  background-color: var(--dl-color-colorscheme-standoutbackgroundcolor);
+}
+
+
+
+
+
+
