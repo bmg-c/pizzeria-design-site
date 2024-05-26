@@ -1,15 +1,20 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
-import InputCheckout from './input-checkout'
-import InputCheckoutSmall from './input-checkout-small'
-import InputTextarea from './input-textarea'
-import ButtonMedium from './button-medium'
-import './checkout-block.css'
+import InputCheckout from "./input-checkout";
+import InputCheckoutSmall from "./input-checkout-small";
+import InputTextarea from "./input-textarea";
+import ButtonMedium from "./button-medium";
+import "./checkout-block.css";
 
 const CheckoutBlock = (props) => {
-  const [isSPB, setIsSPB] = useState(false)
+  const [isSBP, setIsSBP] = useState(false);
+  let buyChoice = "СБП";
+  const changeBuyChoice = (event) => {
+    buyChoice = event.target.value;
+    if (buyChoice != "СБП") setIsSBP(false);
+  };
   return (
     <div className={`checkout-block-container ${props.rootClassName} `}>
       <div className="checkout-block-container01">
@@ -54,8 +59,9 @@ const CheckoutBlock = (props) => {
                 type="radio"
                 name="buyChoice"
                 value="СБП"
-                checked="true"
+                defaultChecked={true}
                 className="radio-button"
+                onChange={changeBuyChoice.bind(this)}
               />
               <span className="checkout-block-text09 TextStyle1">
                 <span className="TextStyle1">СБП</span>
@@ -68,6 +74,7 @@ const CheckoutBlock = (props) => {
                 name="buyChoice"
                 value="Наличными"
                 className="radio-button"
+                onChange={changeBuyChoice.bind(this)}
               />
               <span className="checkout-block-text12 TextStyle1">
                 <span className="TextStyle1">Наличными</span>
@@ -80,6 +87,7 @@ const CheckoutBlock = (props) => {
                 name="buyChoice"
                 value="Картой при получении"
                 className="radio-button"
+                onChange={changeBuyChoice.bind(this)}
               />
               <span className="checkout-block-text15">
                 <span className="TextStyle1">Картой при получении</span>
@@ -123,9 +131,13 @@ const CheckoutBlock = (props) => {
           text="Оформить заказ"
           rootClassName="button-medium-root-class-name9"
           className=""
+          clickFunction={() => {
+            if (buyChoice == "СБП") setIsSBP(true);
+            else document.location.href = document.location.href;
+          }}
         ></ButtonMedium>
       </div>
-      {isSPB && (
+      {isSBP && (
         <div className="checkout-block-container12">
           <div className="checkout-block-container13"></div>
           <div className="checkout-block-container14">
@@ -134,28 +146,31 @@ const CheckoutBlock = (props) => {
               <br className=""></br>
             </span>
             <span className="checkout-block-text28 TextStyle1">
-              Переход к оплате заказа по СПБ
+              Переход к оплате заказа по СБП
             </span>
             <ButtonMedium
               text="Переход к оплате"
               rootClassName="button-medium-root-class-name10"
               className=""
+              clickFunction={() => {
+                window.location.href = "https://sbp.nspk.ru/";
+              }}
             ></ButtonMedium>
           </div>
         </div>
       )}
     </div>
-  )
-}
+  );
+};
 
 CheckoutBlock.defaultProps = {
-  rootClassName: '',
-  pointsAmount: '123 Б',
-}
+  rootClassName: "",
+  pointsAmount: "123 Б",
+};
 
 CheckoutBlock.propTypes = {
   rootClassName: PropTypes.string,
   pointsAmount: PropTypes.string,
-}
+};
 
-export default CheckoutBlock
+export default CheckoutBlock;

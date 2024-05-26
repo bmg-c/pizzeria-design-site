@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
-import Banner from './banner'
-import './banner-section.css'
+import Banner from "./banner";
+import "./banner-section.css";
 
 const BannerSection = (props) => {
   return (
@@ -24,15 +24,15 @@ const BannerSection = (props) => {
         className=""
       ></Banner>
     </div>
-  )
-}
+  );
+};
 
 BannerSection.defaultProps = {
-  rootClassName: '',
-}
+  rootClassName: "",
+};
 
 BannerSection.propTypes = {
   rootClassName: PropTypes.string,
-}
+};
 
-export default BannerSection
+export default BannerSection;
